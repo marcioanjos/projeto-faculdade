@@ -1,29 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+
 <?php 
 
 	$login = $_POST['login'];
 	$senha = $_POST['senha'];
 	
-	include'banco.php';
-
-	function buscar_tarefas($conexao)
-	{
-		$sqlBusca = 'SELECT * FROM login where login = "marcio"';
-		$resultado = mysqli_query($conexao, $sqlBusca);
-		$tarefas = array();
-			while ($tarefa = mysqli_fetch_assoc($resultado)) {
-				$tarefas[] = $tarefa;
-			}
-		return $tarefas;
-	}
-	$a = buscar_tarefas($conexao);
-	$b ="";
-?>
-<a href="teste.php"></a>
-</body>
-</html>
+	
+	include'connect.php';
+	$query = mysqli_query($conn,"SELECT login FROM login where login = '$login'");
+	//saber quantas linhas foi retornada
+	$linhas = mysqli_num_rows($query);
+	//saber oq foi retornado 
+	//$usuarios = mysqli_fetch_assoc($query);
+	
+	//se trouxe alguma linha sera encaminhado para a tela home
+	if ($linhas > 0) {
+		header("Location: home.html");
+	}else{
+		header("Location: telaLogin.html");
+		 }
+		?>
