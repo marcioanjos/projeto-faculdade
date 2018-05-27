@@ -7,66 +7,48 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/hotmenu.css" rel="stylesheet" type="text/css" />
+  <script src="../js/script.js" type="text/javascript"></script>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" class="brand-logo">ADS</a>
-      
-      <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">home</a></li>
-        <li><a href="produto.html">produto</a></li>
-         <li><a href="quarto.html">quarto</a></li>
-         <li><a href="servico.html">serviço</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Cadastro</a></li>
-      </ul>
-    
-    </div>
-  </nav>
+  <!--Menu Principal-->
+  <a id="hotmenuLink" href="utils/menu.html">Menu</a>
   
     <div class="container">
       <br><br>
       <h1 class="header center orange-text">Hotel</h1>
-      <h2 class="header center orange-text">cadastro do quartos</h2>
+      <h2 class="header center orange-text">cadastro de serviços</h2>
       <div class="row center">
         
       </div>
       <div class="row center">
       	
-    <form action="quartoReceber.php" method="POST" class="col s12">
+    <form action="produtoRedecer.php" method="POST" class="col s12">
       
          <div class="row">
     <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="tipo de quarto"  type="text" name="tipoQuarto">
-          <label for="first_name">tipo de quarto</label>
-        </div>
-        
-      </div>
+      
 
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="descrição quarto"  type="text" name="descQuarto">
-          <label for="disabled">descrição do quarto</label>
+          <input placeholder="descrição serviço"  type="text" name="descServiço">
+          <label for="disabled">descrição do serviço</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="valor do quarto" type="text" name="valor">
-          <label for="password">valor do quarto</label>
+          <input placeholder="valor do serviço" type="text" name="valor">
+          <label for="password">valor do serviço</label>
         </div>
       </div>
      
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Status do quarto" type="text" name="status">
-          <label for="disabled">Status do quarto</label>
+          <input placeholder="Status do serviço" type="text" name="serviço">
+          <label for="disabled">Status do serviço</label>
         </div>
       </div>    
       <button class="btn waves-effect waves-light" type="submit" value=" enviar">enviar
