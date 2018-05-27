@@ -1,0 +1,305 @@
+#hotmenu
+{
+    display:block;
+    font-family: "Calibri", Helvetica, Arial, sans-serif;
+    text-align:center;
+    letter-spacing:normal;
+}
+
+#hotmenu ul
+{ 
+    margin:0 auto;
+    padding:0;
+    text-align:center; 
+    width:100%;
+    font-size:0;
+    background:#333333;
+    display:inline-block;
+    list-style:none;
+    position:relative;
+    z-index:999999990; 
+    border-radius:2px;
+padding-top:2px;
+}
+
+#hotmenu li
+{
+    margin:0;
+    padding:0;
+    font-size:15px;
+    display:inline-block;   
+    *display:inline;zoom:1; 
+    position:relative;
+    color:#eeeeee;
+    line-height:44px;
+    vertical-align:middle;
+    transition:background-color 0.2s;
+    outline:none;
+	-moz-user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#hotmenu .full-width {
+    position:static;
+}
+
+#hotmenu .over
+{
+    color:#333333;
+background-color:#f3f3f3;
+border-radius:3px 3px 0 0;
+}
+
+#hotmenu .over.no-sub {
+    color:#fff;
+background-color:#666;
+}
+
+#hotmenu .top-heading
+{
+    font-weight:normal;
+    white-space:nowrap;
+    margin:0 22px;
+    color:inherit;
+    text-decoration:none;
+    display:inline-block; 
+    outline:0;
+    cursor:pointer;
+}
+
+#hotmenu a, #hotmenu a:link, #hotmenu a:hover
+{
+    color:inherit;
+}
+#hotmenu a:hover
+{
+    text-decoration:underline;
+}
+
+#hotmenu a:focus
+{
+    outline:1px dotted #09F;
+}
+
+#hotmenu .caret
+{
+    color:inherit;
+    left:-18px;
+    width: 0;
+    height: 0;
+    overflow:hidden;
+    vertical-align:middle;
+    margin-bottom:2px;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    position:relative;
+}  
+
+#hotmenu .dropdown
+{
+    width:auto;    
+    left:0px;
+    color:#333333;   
+    padding:0;margin:0;display:none;position:absolute;overflow:hidden;
+    top:100%;    
+    border:1px solid #bbb;border-top:none;
+border-radius:0 0 3px 3px;
+box-shadow: 0px 6px 6px rgba(0,0,0,0.175);
+}
+
+#hotmenu .full-width .dropdown {
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+#hotmenu .offset300 {
+    left:-300px;right:auto;
+}
+
+#hotmenu .right-aligned {
+    left:auto;
+    right:0px;
+}
+
+#hotmenu .over .dropdown
+{
+    display:block;
+}
+
+#hotmenu .dd-inner {
+    text-align:center;
+    padding:20px;
+    margin:0px;
+    background-color:#f3f3f3;
+    white-space:nowrap;
+    font-size:13px;
+}
+
+#hotmenu ul ul
+{ 
+    margin:0;padding:0;text-align:left;width:auto;background:none;border:none;display:block;position:static;z-index:0;border-radius:0;
+}
+
+#hotmenu ul ul li
+{
+    font-size:13px;
+    padding:6px 0;
+    color:inherit;
+    line-height:1;
+    margin:0;display:block;position:static;background:none;border:none;transition:none;border-radius:0;
+}
+
+#hotmenu .dropdown a
+{
+    color:#333;
+    line-height:1;
+    text-decoration:none;
+    transition:color 0.4s;
+}
+
+#hotmenu .dropdown a:hover, #hotmenu .dropdown a:focus
+{
+    text-decoration:underline;
+    color:#0099FF;
+}
+
+#hotmenu .column
+{
+    text-align:left;
+    vertical-align:top;
+    display:inline-block;
+    *display:inline;*zoom:1;
+    white-space:normal;
+    width:auto;min-width:200px;
+padding:0 30px;
+border-right:1px solid #333;
+}
+
+#hotmenu .dd-inner ul:last-child
+{
+    border-right:none;
+}
+
+#hotmenu h3 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  font-size: 24px;
+text-transform:uppercase;
+border-bottom:1px solid #333;
+}
+
+#hotmenuLink {display:none;}
+
+#hotmenu .menu-icon   
+{
+    display:none;
+}
+
+@media only screen and (max-width: 480px) 
+{
+    #hotmenu .column.mayHide {
+        display:none;
+    }
+
+    #hotmenu ul {
+        width: 100%; 
+        display: none;
+        border-radius:0; 
+         
+    }
+	
+    #hotmenu li {
+        position:relative;
+        display:block;
+        font-size:20px;
+        text-align:left;
+        border-bottom: 1px solid rgba(200,200,200,0.2);
+    }
+
+    #hotmenu .full-width {
+       position:relative;
+    }
+    
+    #hotmenu .dropdown {
+        position:relative;
+        *top:auto;
+        border:none;
+        border-radius:0;
+        box-shadow:none;
+        background-color:#f3f3f3;
+    }
+    
+    #hotmenu .offset300 {
+        left:0;
+    }
+    
+    #hotmenu .full-width .dropdown{
+        width:auto;
+    }
+    
+    #hotmenu .dd-inner
+    {
+        margin:0;
+        background:none;
+        text-align:left;
+    }
+
+    #hotmenu .column {
+        width:auto;
+        padding:0;
+        border:none;
+        display:block;
+    }
+
+    #hotmenu .caret {
+        position:absolute;
+        left:auto;
+        right:14px;
+        top: 19px;
+        border-width:5px;
+    }
+
+    #hotmenu .menu-icon {
+        font-size:32px;
+		display: block;
+        position: relative;
+		width: 40px;
+		height:36px;
+        text-align:center;
+		cursor: pointer;
+		-moz-user-select:none;		
+        -webkit-user-select: none;
+        background-color: #EEE;
+        border-radius: 3px;
+
+        margin-bottom:6px;	
+          margin-left: 12px;
+        margin-right: auto;
+    }
+
+    #hotmenu .menu-icon::before {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 4px;
+        width: 1em;
+        height: 0.125em;
+        border-top: 0.375em double #333;
+        border-bottom: 0.125em solid #333;
+        box-sizing:content-box;
+    }
+
+    #hotmenu .menu-icon-active {
+        background-color: #333;
+    }
+
+    #hotmenu .menu-icon-active::before {
+      border-color: #EEE;
+    }
+}
