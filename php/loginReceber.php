@@ -5,7 +5,7 @@
 	$senha = $_POST['senha'];
 	
 	
-	include'connect.php';
+	include'utils/config.php';
 	$query = mysqli_query($conn,"SELECT login FROM login where login = '$login'");
 	//saber quantas linhas foi retornada
 	$linhas = mysqli_num_rows($query);
