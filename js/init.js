@@ -2,6 +2,6 @@
   $(function(){
 
     $('.sidenav').sidenav();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+    $("#menuContent").load("html/utils/menu.html"); 
+  });
+})(jQuery); 
