@@ -9,7 +9,7 @@
 
     $redirecionar = "../html/quarto.html";
     
-    $linhasInseridas = $db->exec("INSERT INTO quarto (tipoQuarto, descricao, valorSimples, status) VALUES ('".$tipoQuarto."', '".$descQuarto."', ".$valor.", '".$status."')");
+    $linhasInseridas = $db->exec("INSERT INTO quarto (tipoQuarto, descricao, valorSimples, status) VALUES ('".$tipoQuarto."', '".$descQuarto."', '".$valor."', '".$status."')");
 	
     if ($linhasInseridas) {
 		header("location: $redirecionar");

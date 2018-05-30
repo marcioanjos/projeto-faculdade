@@ -6,7 +6,7 @@
 	
 	
 	include'utils/connect.php';
-	$query = mysqli_query($conn,"SELECT login FROM login where login = '$login'");
+	$query = mysqli_query($conn,"SELECT login FROM login where login = '$login' AND senha = '$senha'");
 	//saber quantas linhas foi retornada
 	$linhas = mysqli_num_rows($query);
 	//saber oq foi retornado 
@@ -18,4 +18,4 @@
 	}else{
 		header("Location: ../index.html");
 		 }
-		?>
+?>

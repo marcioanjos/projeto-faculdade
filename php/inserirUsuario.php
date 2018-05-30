@@ -5,6 +5,8 @@
     $login = $_POST['login'];
     $senha = $_POST['senha'];
 
+
+
     $redirecionar = "../html/usuario.html";
 
     $linhasInseridas = $db->exec("INSERT INTO login (login, senha) values ('" . $login . "','". $senha . "')");

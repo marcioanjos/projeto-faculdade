@@ -2,14 +2,13 @@
 
     include'utils/config.php';
 
-    $tipoProduto = $_POST['tipoProduto'];
     $descProduto = $_POST['descProduto'];
     $valor = $_POST['valor'];
     $quantProduto = $_POST['qtd'];
 
     $redirecionar = "../html/produto.html";
     
-    $linhasInseridas = $db->exec("INSERT INTO produto (descProduto, idTipoProduto, valorProduto, quatindade) values ('" . $descProduto . "', ". $tipoProduto . ", ". $valor . ", " . $quantProduto . " )");
+    $linhasInseridas = $db->exec("INSERT INTO produto (descProduto, valorProduto, quatindade) values ('" . $descProduto . "',' ". $valor ."',' " . $quantProduto . " ')");
 	
     if ($linhasInseridas) {
 		header("location: $redirecionar");
