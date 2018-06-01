@@ -86,6 +86,7 @@ li ul{
  li:hover ul{
     display: block;
     float:relative;
+    color: blue;
 
 }
  li:hover li{
