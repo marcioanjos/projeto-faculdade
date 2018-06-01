@@ -86,6 +86,8 @@ li ul{
  li:hover ul{
     display: block;
     float:relative;
+    color: blue;
+
 }
  li:hover li{
     font-size: 12px;

@@ -19,6 +19,23 @@
         <div class="container">
             <h2 class="header center orange-text">Cadastro de Produtos</h2>
             <form action="../php/inserirProduto.php" method="POST"> 
+                <label><h6>TIPO PRODUTO</h6></label>
+                <table border="0">
+                    <tr>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="01"/>
+                            <span>Fringobar</span>
+                        </label>
+                        <td>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="02"/>
+                            <span>Hotel</span>
+                        </label>
+                        <td>
+                    </tr>
+                </table>
                 
                 <a>Descrição</a>
                 <input placeholder="Descrição do Produto"  type="text" name="descProduto">
@@ -28,8 +45,9 @@
                 
                 <a>Quantidade</a>
                 <input placeholder="Quantidade em Estoque" type="text" name="qtd">
-                
+               
                 <button class="btn waves-effect waves-light" type="submit" value="salvar">Salvar</button>
+
             </form>
         </div>
         <br>

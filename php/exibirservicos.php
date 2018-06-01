@@ -1,11 +1,11 @@
 <?php
 	include'utils/connect.php';
 	
-	$query = $conn->query("SELECT * FROM servico");
+	$query = $conn->query("SELECT * FROM produto");
 	echo '<table  class="striped">';
-	echo	" <tr> <th>ID</th> <th>Descrição</th> <th>Valor</th> <th>Status</th> </tr> ";
+	echo	" <tr> <th>ID</th> <th>idTipoProduto</th> <th>descProduto</th> <th>valorProduto</th> <th>quantidade</th> </tr> ";
 	while ($linha = mysqli_fetch_assoc($query)) {
-		echo '<tr><td>'.$linha['idServico'].'</td>'.'<td>'.$linha['descServico'].'</td>'.'<td>'.$linha['valor'].'<td>'.$linha['status']."</td> </tr>";
+		echo '<tr><td>'.$linha['id'].'</td>'.'<td>'.$linha['idTipoProduto'].'</td>'.'<td>'.$linha['descProduto'].'<td>'.$linha['valorProduto'].'</td>' .'<td>'.$linha['quantidade']."</td> </tr>";
 	} 
 	echo '</table>';
 ?>
