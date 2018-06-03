@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Hotel ads</title>
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="../css/hotmenu.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <!--Menu Principal-->
+        <div id="menuContentHtml"></div>
+        <div class="container">
+            <h2 class="header center orange-text">RESERVA DE APARTAMENTO</h2>
+             <h2 class="header center orange-text">CADASTRO CLIENTE</h2>
+            <form action="../php/inserirCliente.php" method="POST"> 
+                <label><a>Escolha seu apartamento</a></label>
+                <table border="0">
+                    <tr>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="01"/>
+                            <span>Casal</span>
+                        </label>
+                        </td>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="02"/>
+                            <span>Solteiro</span>
+                        </label>
+                        </td>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="03"/>
+                            <span>Praia</span>
+                        </label>
+                        </td>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="04"/>
+                            <span>familia</span>
+                        </label>
+                        </td>
+                    </tr>
+                </table>
+                <a>NOME</a>
+                <input placeholder="DIGITE SEU NOME" type="text" name="NOME">
+
+                <a>CPF</a>
+                <input placeholder="DIGITE SEU CPF"  type="text" name="CPF">
+                
+                <a>RG</a>
+                <input placeholder="DIGITE SEU RG"  type="text" name="RG">
+                
+                <a>ENDERENÇO</a>
+                <input placeholder="DIGITE SEU ENDERENÇO" type="text" name="ENDERENÇO">
+
+                <a>NUMERO</a>
+                <input placeholder="NUMERO" type="text" name="NUMERO">
+
+                <a>COMPLEMENTO</a>
+                <input placeholder="COMPLEMENTO" type="text" name="COMPLEMENTO">
+               
+                <a>BAIRRO</a>
+                <input placeholder="BAIRRO" type="text" name="BAIRRO">
+                
+                <a>CIDADE</a>
+                <input placeholder="CIDADE" type="text" name="CIDADE">
+
+                <a>DATA NASCIMENTO</a>
+                <input placeholder="CEP" type="date" name="DATANASCIMENTO">
+
+                <a>NACIONALIDADE</a>
+                <input placeholder="DIGITE SUA NACIONALIDADE" type="text" name="NACIONALIDADE">
+
+                <a>SEXO</a>
+                <table border="0">
+                    <tr>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="05"/>
+                            <span>M</span>
+                        </label>
+                        </td>
+                        <td>
+                        <label>
+                            <input type="checkbox" name="06"/>
+                            <span>F</span>
+                        </label>
+                        </td>
+                    </tr>
+                </table>
+
+                <a>ESTADO CIVIL</a>
+                <input placeholder="DIGITE SEU ESTADO CIVIL" type="text" name="ESTADOCIVIL">
+
+                <a>E-MAIL</a>
+                <input placeholder="E-MAIL" type="text" name="E-MAIL">
+
+                <a>DATA INICIO</a>
+                <input placeholder="DATA INICIO DA RESERVA" type="date" name="DATAINICIO">
+
+                <a>DATA FIM</a>
+                <input placeholder="DATA FIM RESERVA" type="date" name="DATAFIM">
+
+                <button class="btn waves-effect waves-light" type="submit" value="salvar">RESERVA</button>
+
+            </form>
+        </div>
+        <br>
+        <br>
+    </body>
+    <footer class="page-footer orange">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row center">
+                    @copyright
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
