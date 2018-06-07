@@ -17,6 +17,6 @@ $valor = $linha['valorSimples'];
 
  //inserido em reserva criando a reserva do cliente
     $linhasInseridas = $db->exec("INSERT INTO reserva (idCliente, idQuarto, dataInicio, dataFim, valorDiario, tipoQuartoSelecionado, chekin)
-    values ('" . $idCliente . "','" . $idQuarto . "',' ". $dataInicio ."',' " . $dataFim . " ',' " . $ . " ',' " . $valor . " ',' " . $tipoQuarto . " ',' " . $dataInicio . " ')");
-
-    ?>
+    values ('" . $idCliente . "','" . $idQuarto . "',' ". $dataInicio ."','". $dataFim ."','".$valor ."','".$tipoQuarto."','".$dataInicio."')");
+    
+?>

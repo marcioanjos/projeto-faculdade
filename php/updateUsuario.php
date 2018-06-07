@@ -7,7 +7,7 @@
 
 	$linhasAtualizadas = $db->exec("UPDATE login SET login='".$login."', senha='".$senha."' WHERE id= '".$id."' ");
 	if ($linhasAtualizadas) {
-		echo 'Atualizado com sucesso';
+		header("location: ../html/exibirUsuarios.php");
 	} else {
 		echo 'Não foi possível atualizar';
 	}

@@ -14,7 +14,7 @@
 
 	$linhasAtualizadas = $db->exec("UPDATE produto SET idTipoProduto='".$tipoProduto."', descProduto='".$descricao."', valorProduto = '".$valor."', quantidade = '".$quantidade."' WHERE idProduto= '".$id."' ");
 	if ($linhasAtualizadas) {
-		echo 'Atualizado com sucesso';
+		header("location: ../html/exibirProdutos.php");
 	} else {
 		echo 'Não foi possível atualizar';
 	}

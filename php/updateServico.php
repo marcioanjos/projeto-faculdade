@@ -8,7 +8,7 @@
 
 	$linhasAtualizadas = $db->exec("UPDATE servico SET  descServico ='".$descricao."', valor = '".$valor."', status = '".$status."' WHERE idServico= '".$id."' ");
 	if ($linhasAtualizadas) {
-		echo 'Atualizado com sucesso';
+		header("location: ../html/exibirSericos.php");
 	} else {
 		echo 'Não foi possível atualizar';
 	}

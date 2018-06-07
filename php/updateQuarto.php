@@ -9,7 +9,7 @@
 
 	$linhasAtualizadas = $db->exec("UPDATE quarto SET tipoQuarto='".$tipoQuarto."', descricao='".$descricao."', valorSimples = '".$valor."', status = '".$status."' WHERE idQuarto= '".$id."' ");
 	if ($linhasAtualizadas) {
-		echo 'Atualizado com sucesso';
+		header("location: ../html/exibirQuartos.php");
 	} else {
 		echo 'Não foi possível atualizar';
 	}
