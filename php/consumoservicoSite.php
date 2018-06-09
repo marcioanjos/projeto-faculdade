@@ -21,7 +21,7 @@
     values ('".$idReserva."','".$servico."',' ".$qtd."','".$valor."','".$total."')");
 
 	if ($linhasInseridas) {
-		header("location: ../html/sucesso.html");
+		header("location: ../html/sucessoSite.html");
 	} else {
 		echo 'Não foi possível excluir';
 	}

@@ -17,21 +17,26 @@
         <!--Menu Principal-->
         <div id="menuContentHtml"></div>
         <div class="container">
-            <h2 class="header center orange-text">Cadastro de Consumo de Serviço</h2>
-            <form action="../php/consumoservico.php" method="POST"> 
+            <h2 class="header center orange-text">Solicita Produtos</h2>
+           
+            <form action="../php/consumoProduto.php" method="POST"> 
                 
                 
                 <a>CPF</a>
-                <input placeholder="cpf cliente"  type="text" name="cpf">
+                <input placeholder="Digite seu cpf para solicita o produto desejado"  type="text" name="cpf">
                 
-                <a>Serviço</a>
-                <input placeholder="digite o serviço desejado"  type="text" name="Servico">
+                <?php
+                echo "<h1>Produtos Disponiveis</h1  >";
+                    include'../php/exibirProduto.php';
+                ?> 
+                <a>ID</a>
+                <input placeholder="digite o id do produto desejado"  type="text" name="produto">
                 
                 <a>Quantidade</a>
-                <input placeholder="Quantas Pessoas" type="text" name="qtd">
+                <input placeholder="Quantos itens deseja" type="text" name="qtd">
                
                 <button class="btn waves-effect waves-light" type="submit" value="salvar">Salvar</button>
-
+                 
             </form>
         </div>
         <br>

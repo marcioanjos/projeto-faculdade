@@ -2,7 +2,7 @@
 	include'utils/connect.php';
 	
 	$cpf= $_POST['cpf'];
-	$servico= $_POST['Servico'];
+	$produto= $_POST['produto'];
 	$qtd= $_POST['qtd'];
 	
 	//select para saber qual a id da reserva do cliente
@@ -11,14 +11,14 @@
 	$idReserva = $idCliente['idReserva'];
 	//select para saber o valor do serviço
 	
-	$query = $conn->query("SELECT valor FROM servico where idServico = '$servico' ");
+	$query = $conn->query("SELECT valorProduto FROM produto where idProduto = '$produto' ");
 	$val = mysqli_fetch_assoc($query);
-	$valor = $val['valor'];
+	$valor = $val['valorProduto'];
 	$total = $valor * $qtd;
 
 	include'utils/config.php';
-	$linhasInseridas = $db->exec("INSERT INTO consumoreservaservico (idReserva, idServico, quantidade, valorUnitario, valorPago)
-    values ('".$idReserva."','".$servico."',' ".$qtd."','".$valor."','".$total."')");
+	$linhasInseridas = $db->exec("INSERT INTO consumoreservaproduto (idReserva, idProduto, quantidade, valorUnitario, valorPago)
+    values ('".$idReserva."','".$produto."',' ".$qtd."','".$valor."','".$total."')");
 
 	if ($linhasInseridas) {
 		header("location: ../html/sucesso.html");
